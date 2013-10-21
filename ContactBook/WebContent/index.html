@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+<script src='resources/sap-ui-core.js' id='sap-ui-bootstrap'
+data-sap-ui-libs='sap.ui.commons,sap.ui.table,sap.suite.ui.commons,sap.ui.layout,sap.ui.ux3'
+data-sap-ui-theme='sap_goldreflection'></script>
+<script src='underscore.js'></script>
+<script src='data.js'></script>
+<script src='http://www.flotcharts.org/flot/jquery.flot.js'></script>
+<script src='http://www.flotcharts.org/flot/jquery.flot.stack.js'></script>
+<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+<script>
+  var getView = function (id, viewName) { //TODO:avoid 
+    var view = sap.ui.getCore().byId(id);
+    if (!view) {
+      view = sap.ui.view({
+        id : id,
+        viewName : viewName,
+        type : sap.ui.core.mvc.ViewType.JS
+      });
+    }
+    return view;
+  }
+</script>
+<script>
+  sap.ui.localResources('ContactBook');
+  var view = getView('id-index-shell', 'ContactBook.indexShell');
+  view.placeAt('shell');
+</script>
+<style>
+.box {
+	margin: 10px 10px 10px 10px;
+	padding: 15px 25px 5px 25px;
+	background-color: white;
+	border: 14px solid #f2f2f2;
+	border-radius: 5px;
+	opacity: 0.9;
+	box-shadow: 0 4px 17px rgba(0, 0, 0, 0.4);
+}
+</style>
+</head>
+<body class='sapUiBody' role='application'>
+<div id='shell'></div>
+</body>
+</html>
