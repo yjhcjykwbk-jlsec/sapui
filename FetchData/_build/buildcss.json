@@ -1,0 +1,5 @@
+{
+  cssIn: "../css/main.css", 
+  out: "built.css",
+  optimizeCss: "default"
+}

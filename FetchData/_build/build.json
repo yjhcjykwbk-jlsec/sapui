@@ -1,0 +1,26 @@
+{
+  "baseUrl": "../",
+   paths: {
+    'jqueryUI'           :   'script/jqueryUI',
+    'tableTool'          :   'script/TableTools.min',
+    'ZeroClipboard'      :   'script/ZeroClipboard',
+    'Model'              :   'js/models/model',
+    'caseModel'          :   'js/models/caseModel',
+    'activityModel'      :   'js/models/activityModel',
+    'topIssueModel'      :   'js/models/topIssueModel',
+    'mainView'           :   'js/views/mainView',
+    'tableView'          :   'js/views/tableView',
+    'Controller'         :   'js/controllers/Controller',
+    'Router'             :   'js/router'
+  },
+  "name": "js/main",
+  "include": [
+    "script/require"
+    ],
+  "exclude": [],
+  "optimize": "uglify2",
+  "out": "main-built.js",
+  "insertRequire": [
+    "js/main"
+  ]
+}

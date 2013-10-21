@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head></head>
+   <body>
+      <div class="display-area">
+         <div>
+            <span class="title">List Type:</span>
+            <select id="list-type">
+               <option value="CaseList">Case List</option>
+               <option value="ActivityList">Activity List</option>
+               <option value="TopIssueList">Top Issue List</option>
+            </select>
+            <span class="title">Server Name:</span>
+            <select id="server-name">
+               <option value="pgpmain">pgpmain</option>
+               <option value="pgvmain">pgvmain</option>
+               <option value="pgtmain">pgtmain</option>
+               <option value="pgxmain">pgxmain</option>
+            </select>
+            <span class="title">Change Time:</span>
+            <select id="change-time">
+               <option value="anytime">Any Time</option>
+               <option value="last-week">Last Week</option>
+               <option value="last-two-weeks">Last Two Weeks</option>
+               <option value="last-month">Last Month</option>
+               <option value="last-year">Last Year</option>
+            </select>
+         </div>
+         <br>
+         <div id="activity-checkbox">
+         </div>
+         <div id="case-checkbox">
+            <table>
+              <tr>
+                 <span class="title">Extended Content (Only For Red & Yellow Rating)</span>
+              </tr>
+              <tr>
+                 <td><input type="checkbox" class="caseCheckBox" value="Notes">Management Summary</td>
+                 <td><input type="checkbox" class="caseCheckBox" value="TopIssues">Open Top Issuses</td>
+                 <td><input type="checkbox" class="caseCheckBox" value="CaseActivities">Open Activities</td>
+              </tr>
+            </table>
+         </div>
+         <div id="checkbox-area">
+            <p class="title">Service Teams:</p>
+            <table>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0003612380">SolS APA Backoffice</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235363">HANA MCC APJ</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014456163">MCC Deployment Support UE / Mobile China</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014217680">MCC Engagement Support China</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0003584574">SolS EMEA Backoffice</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014217791">HANA MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014456139">MCC Deployment Support HANA China</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014224328">MCC Engagement Ops China</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0003612382">SolS US Backoffice</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235364">HANA MCC US</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014629052">MCC Deployment Room TransflaF North Asia</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014722020">MCC Engagement Support India</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0014307540">SolS Mobile MCC APJ</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235365">HANA MCC LA </td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014629049">MCC Deployment Room Fin. North Asia</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014629051">MCC Orchestration ALM North Asia</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0014307539">SolS Mobile MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235825">ALM MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014629045">MCC Deployment Room HCM North Asia</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014628771">MCC Orchestration OCC North Asia</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0014307541">SolS Mobile MCC NA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014307538">Security MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014629048">MCC Deployment Room Logistics North Asia</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014456170">MCC Value Realization Support China</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="4864490">SolS Global Backoffice</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235828">Mobile MCC EMEA </td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014299677">Database Migrations MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0015963558">MCC Orch ALM MCC Orchestration Room ALM LAC</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0013732949">SAP MCC HANA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0008237117">MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014299411">Maintenance Optimization MCC EMEA</td>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235827">RunSAP like a Factory MCC EMEA</td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" class="myCheckBox" value="0014235826">Integration Validation MCC EMEA</td>
+               </tr>
+            </table>
+            <button id="submitid">Submit Selected</button><br>
+         </div>
+         <div id="servers">
+            <p id="show-area">Servers Selected:</p>
+            <textarea id="service-team-id" cols="50" rows="4"></textarea>
+            <button id="show">Show Table</button><br>
+         </div>
+      </div>
+   </body>
+   <!-- Libraries needed -->
+   <!-- 
+   <script data-main="js/main.js" src="script/require.js"></script>
+    -->
+    <script src="script/jquery.min.js"></script>
+    <script src="script/underscore-min.js"></script>
+    <script src="script/backbone-min.js"></script>
+    <script src="script/jquery.dataTables.nightly.min.js"></script>
+    
+   <script src="_build/main-built.js"></script>
+   <!-- CSS needed -->
+   <link rel="stylesheet" type="text/css" href="_build/built.css">
+</html>

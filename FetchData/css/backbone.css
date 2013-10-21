@@ -1,0 +1,127 @@
+
+
+#case-list {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+#management-summary {
+  width: 300px;
+}
+
+#activity-list {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: left;
+  padding-left: 100px;
+}
+
+#number {
+  font-size: 20px;
+}
+
+#show {
+	font-size: 14px;
+	float: right;
+}
+
+#show-area {
+	font-size: 16px;
+	font-weight: bold;
+}
+#servers {
+	width: 550px;
+}
+
+#checkbox-area {
+	width: 1024px;
+	text-align: left;
+}
+
+#submitid {
+	float: right;
+	margin-right: 12%;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.ui-progressbar {
+  position: relative;
+}
+
+.ui-state-default {
+  width: auto;
+  max-width: 600px;
+}
+
+.progress-label {
+  position: absolute;
+  left: 3% ;
+  top: 4px;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 1px 1px 0#fff;
+}
+
+body {
+  font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+  font-size: 12px ;
+}
+
+button {
+	-moz-box-shadow:inset -8px 1px 0px -8px #fce2c1;
+	-webkit-box-shadow:inset -8px 1px 0px -8px #fce2c1;
+	box-shadow:inset -8px 1px 0px -8px #fce2c1;
+	background-color:#b0b0b0;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	display:inline-block;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:47px;
+	line-height:47px;
+	width:104px;
+	text-decoration:none;
+	text-align:center;
+}
+
+button:hover {
+	background-color:#fb9e25;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+td { 
+  font-size: 9pt;
+  color: #000000;
+  text-align:left;
+  vertical-align: top;
+}
